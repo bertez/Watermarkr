@@ -1,0 +1,27 @@
+# -*- coding: utf-8 -*-
+## base.html
+<html>
+    <head>
+        <title><%block name="pagetitle"/></title>
+
+        <link rel="stylesheet" href="/static/style.css" title="Styles" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <%block name="header">
+                <h1>Watermarkr</h1>
+            </%block>
+        </header>
+
+        ${self.body()}
+
+        <footer>
+            <%block name="footer">
+                <hr/>
+                <p><a href="/">Start again</a> | by @bertez</p>
+                <small>This site is not affiliated with Brazzers. Brazzers logo is copyright Cordiacon Developments Ltd, Froytal Services Ltd and Alamea Holdings Limited</small>
+            </%block>
+        </footer>
+    </body>
+</html>

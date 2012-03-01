@@ -1,0 +1,4 @@
+MAX_FILE_SIZE = 2000000
+UPLOADS_DIR = 'uploads/'
+PROCESSED_PREFIX = 'proc_'
+WATERMARK_IMG = 'mark.png'

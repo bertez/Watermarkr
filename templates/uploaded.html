@@ -1,0 +1,14 @@
+## uploaded.html
+<%inherit file="base.html"/>
+
+<%block name="pagetitle">
+        ${title}
+</%block>
+
+<%block name="header">
+        <h1>${title}</h1>
+</%block>
+
+<p><a href="/uploads/proc_${filename}"><img src="/uploads/proc_${filename}" style="max-width:800px" /></a></p>
+<p><a href="/uploads/${filename}">Original</a></p>
+
