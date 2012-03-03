@@ -18,6 +18,9 @@ def generate_error(name, message):
     tmpl = lookup.get_template('error.html')
     return tmpl.render(title=name, text=message)
 
+# The next two functions were taken from here:
+# http://code.activestate.com/recipes/362879-watermark-with-pil/
+
 def reduce_opacity(im, opacity):
     """Returns an image with reduced opacity."""
     assert opacity >= 0 and opacity <= 1
